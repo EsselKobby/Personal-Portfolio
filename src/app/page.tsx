@@ -116,7 +116,7 @@ export default function Portfolio() {
             Hey there, I’m Jeffrey, a Sofware Engineer with a strong expertise in building scalable, 
             efficient server-side applications. With a deep understanding of databases, APIs, and system architecture, 
             I specialize in creating seamless, high-performance solutions that power user experiences. 
-            I'm passionate about optimizing performance, ensuring security, and collaborating with cross-functional teams to deliver robust, reliable systems.
+            I&apos;m passionate about optimizing performance, ensuring security, and collaborating with cross-functional teams to deliver robust, reliable systems.
             I have a diverse skill set that includes expertise in <span className="text-yellow-500 text-bold">Python</span> , <span  className="text-yellow-500 text-bold">Go </span>
             and <span className="text-yellow-500 text-bold">JavaScript</span>. I am also intrigued by the concept of AI and 
             I am currently exploring deeply on how it can be combined with my skillsets to make a lasting difference in the Tech World.
@@ -227,7 +227,7 @@ export default function Portfolio() {
           <section>
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Contact Me...</span></h2>
           <p className="text-gray-300 mb-4">
-            I'm always open to new opportunities and collaborations. Feel free to reach out!
+            I&apos;m always open to new opportunities and collaborations. Feel free to reach out!
           </p>
           <div className="text-center">
             <Link
