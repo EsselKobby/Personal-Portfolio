@@ -1,101 +1,244 @@
+import { Github, Linkedin, Mail} from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+function Skill({ name }: { name: string }) {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex items-center space-x-2 bg-gray-800 p-3 rounded-md">
+      <span>{name}</span>
+    </div>
+  );
+}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+function Project({
+  title,
+  description,
+  sourceLink,
+}: {
+  title: string;
+  description: string;
+  sourceLink: string;
+}) 
+
+{
+
+  return (
+    <div className="bg-gray-800 p-6 rounded-lg">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-300 mb-4">{description}</p>
+      <div className="flex flex-wrap gap-4">
+        <Link
+          href={sourceLink}
+          className="text-blue-400 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source Code
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function Article({
+  title,
+  description,
+  sourceLink,
+}: {
+  title: string;
+  description: string;
+  sourceLink: string;
+}) 
+
+{
+
+  return (
+    <div className="bg-gray-800 p-6 rounded-lg">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-300 mb-4">{description}</p>
+      <div className="flex flex-wrap gap-4">
+        <Link
+          href={sourceLink}
+          className="text-blue-400 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      
+      <main className="max-w-5xl mx-auto space-y-16 py-12 px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="text-center">
+          <div className="mb-8">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/Me.jpg"
+              alt="Jeffrey Mintah"
+              width={200}
+              height={200}
+              className="rounded-full mx-auto"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          </div>
+          <div>
+            <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">I am 
+              <span className="text-yellow-500 text-bold"> Jeffrey Mintah.</span></p>
+            <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">A 
+              <span className="text-yellow-500 text-bold"> Software Engineer.</span></p>
+            <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">I love making interesting stuff with 
+              <span className="text-yellow-500 text-bold"> Programming</span>🚀.</p>
+          </div>
+          <div className="flex justify-center space-x-4 mt-6">
+            <Link href="https://github.com/Minty-cyber" className="text-gray-400 hover:text-white">
+              <Github size={24} />
+            </Link>
+            <Link href="https://www.linkedin.com/in/jeffrey-m-a846a2229" className="text-gray-400 hover:text-white">
+              <Linkedin size={24} />
+            </Link>
+            <Link href="mailto:jeffreymintah737@gmail.com" className="text-gray-400 hover:text-white">
+              <Mail size={24} />
+            </Link>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section>
+          <h2 className="text-2xl font-semibold mb-4"> <span className="text-yellow-500 text-3xl text-bold"> / About Me...</span></h2>
+          <div className="flex ">
+            
+            <p className="text-gray-300">
+            Hey there, I’m Jeffrey, a Sofware Engineer with a strong expertise in building scalable, 
+            efficient server-side applications. With a deep understanding of databases, APIs, and system architecture, 
+            I specialize in creating seamless, high-performance solutions that power user experiences. 
+            I'm passionate about optimizing performance, ensuring security, and collaborating with cross-functional teams to deliver robust, reliable systems.
+            I have a diverse skill set that includes expertise in <span className="text-yellow-500 text-bold">Python</span> , <span  className="text-yellow-500 text-bold">Go </span>
+            and <span className="text-yellow-500 text-bold">JavaScript</span>. I am also intrigued by the concept of AI and 
+            I am currently exploring deeply on how it can be combined with my skillsets to make a lasting difference in the Tech World.
+            </p>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Techs and Tools...</span></h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <Skill name="Python" />
+            <Skill name="Go" />
+            <Skill  name="JavaScript" />
+            <Skill name="TypeScript" />
+            <Skill name="Django" />
+            <Skill name="Django Rest Framework" />
+            <Skill  name="FastAPI" />
+            <Skill name="Flask" />
+            <Skill name="Gin" />
+            <Skill name="NodeJS" />
+            <Skill name="AlpineJS" />
+            <Skill name="NextJS" />
+            <Skill  name="NGINX" />
+            <Skill name="Docker" />
+            <Skill name="Postman" />
+            <Skill name="RabbitMQ" />
+            <Skill name="SQLAlchemy" />
+            <Skill name="GraphQL" />
+            <Skill name="Celery" />
+            <Skill name="DBeaver" />
+          
+
+
+          </div>
+        </section>
+
+        {/* Projects Section */}
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Open Source Contributions...</span></h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <Project
+              title="FastAPI FullStack Template"
+              description="Refactored Imports in a file
+              and Ensured code effectiveness in a function and its declaration"
+              sourceLink="https://github.com/Minty-cyber/full-stack-fastapi-template"
+            />
+            <Project
+              title="Djate"
+              description="Engineered the usage of uv as the package manager, 
+                Reconfigured the MakeFile to implement uv as the package manager, 
+                Implemented the Github workflow to install uv, flake8 and black cli as a linter and formatter"
+              sourceLink="https://github.com/Minty-cyber/djate"
+            />
+           
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Projects...</span></h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <Project
+              title="LinkInk"
+              description="A full stack note taking application with advanced AI features"
+              sourceLink="https://github.com/Minty-cyber/linkink"
+            />
+            <Project
+              title="BasicLingua Web 🤖"
+              description="A webapp that shows the demo of how the basiclingua library works with an LLM Python library. 
+              It has features of Text Summarization, Text Translate, Text Intent and so forth..."
+              sourceLink="https://github.com/Minty-cyber/BasicLingua-Webapp"
+            />
+            <Project
+              title="LinguaDoc 🤖"
+              description="A desktop application for translating languages
+               and giving users the functionality to export as a word document🚀"
+              sourceLink="https://github.com/Minty-cyber/LinguaDoc"
+            />
+            <Project
+              title="PDF Assistant 🤖"
+              description="An application that allows you to interact with your PDF's by answering questions based on the PDF's you upload ⚓."
+              sourceLink="https://github.com/Minty-cyber/PDF-Assistant"
+            />
+          </div>
+        </section>
+
+      
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Open Source Contributions...</span></h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <Article
+              title="React-Django CRUD"
+              description="An article on combining React and Django"
+              sourceLink="https://jeffmint.hashnode.dev/building-a-crud-application-with-react-and-django-a-todo-application"
+            />
+            <Article
+              title="Code that Speaks"
+              description="Talking and hearing back from your codes with Python"
+              sourceLink="https://jeffmint.hashnode.dev/code-that-speaks-a-beginners-guide-to-pyttsx3-text-to-speech-tts-in-python"
+            />
+           
+          </div>
+        </section>
+
+          {/* Contact Section */}
+          <section>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Contact Me...</span></h2>
+          <p className="text-gray-300 mb-4">
+            I'm always open to new opportunities and collaborations. Feel free to reach out!
+          </p>
+          <div className="text-center">
+            <Link
+              href="mailto:jeffreymintah737@gmail.com"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
