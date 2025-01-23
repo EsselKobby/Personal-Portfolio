@@ -207,7 +207,7 @@ export default function Portfolio() {
       
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Open Source Contributions...</span></h2>
+          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Articles...</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Article
               title="React-Django CRUD"
