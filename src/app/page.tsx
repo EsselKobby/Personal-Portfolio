@@ -1,6 +1,8 @@
+'use client'
 import { Github, Linkedin, Mail} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Chat from "@/components/chat";
 
 function Skill({ name }: { name: string }) {
   return (
@@ -95,13 +97,13 @@ export default function Portfolio() {
               <span className="text-yellow-500 text-bold"> Programming</span>🚀.</p>
           </div>
           <div className="flex justify-center space-x-4 mt-6">
-            <Link href="https://github.com/Minty-cyber" className="text-gray-400 hover:text-white">
+            <Link href="https://github.com/Minty-cyber"target="_blank" className="text-gray-400 hover:text-white">
               <Github size={24} />
             </Link>
-            <Link href="https://www.linkedin.com/in/jeffrey-m-a846a2229" className="text-gray-400 hover:text-white">
+            <Link href="https://www.linkedin.com/in/jeffrey-m-a846a2229" target="_blank" className="text-gray-400 hover:text-white">
               <Linkedin size={24} />
             </Link>
-            <Link href="mailto:jeffreymintah737@gmail.com" className="text-gray-400 hover:text-white">
+            <Link href="mailto:jeffreymintah737@gmail.com"  target="_blank" className="text-gray-400 hover:text-white">
               <Mail size={24} />
             </Link>
           </div>
@@ -113,12 +115,12 @@ export default function Portfolio() {
           <div className="flex ">
             
             <p className="text-gray-300">
-            Hey there, I’m Jeffrey, a Sofware Engineer with a strong expertise in building scalable, 
+            Hey there, I’m Jeffrey, a <span className="text-yellow-500 text-bold">Sofware Engineer</span> with a strong expertise in building scalable, 
             efficient server-side applications. With a deep understanding of databases, APIs, and system architecture, 
             I specialize in creating seamless, high-performance solutions that power user experiences. 
             I&apos;m passionate about optimizing performance, ensuring security, and collaborating with cross-functional teams to deliver robust, reliable systems.
             I have a diverse skill set that includes expertise in <span className="text-yellow-500 text-bold">Python</span> , <span  className="text-yellow-500 text-bold">Go </span>
-            and <span className="text-yellow-500 text-bold">JavaScript</span>. I am also intrigued by the concept of AI and 
+            and <span className="text-yellow-500 text-bold">JavaScript</span>. I am also intrigued by the concept of <span className="text-yellow-500 text-bold">AI</span> and 
             I am currently exploring deeply on how it can be combined with my skillsets to make a lasting difference in the Tech World.
             </p>
           </div>
@@ -239,6 +241,11 @@ export default function Portfolio() {
           </div>
         </section>
       </main>
+
+          <div className="bg-gray-900 text-gray-100">
+         
+          <Chat />
+        </div>
     </div>
   );
 }
