@@ -134,7 +134,7 @@ export default function Portfolio() {
             <Skill name="MATLAB" />
             <Skill name="Graphic Design" />
             <Skill name="Photography" />
-            <Skill name="Digital Marketing" />
+            <Skill name="Online Marketing" />
           </div>
         </section>
 
