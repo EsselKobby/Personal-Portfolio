@@ -82,7 +82,7 @@ export default function Portfolio() {
           <div className="mb-8">
             <Image
               src="/images/Me.jpg"
-              alt="Jeffrey Mintah"
+              alt="Bernard Essel"
               width={200}
               height={200}
               className="rounded-full mx-auto"
@@ -90,20 +90,20 @@ export default function Portfolio() {
           </div>
           <div>
             <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">I am 
-              <span className="text-yellow-500 text-bold"> Jeffrey Mintah.</span></p>
+              <span className="text-yellow-500 text-bold"> Bernard Essel.</span></p>
             <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">A 
               <span className="text-yellow-500 text-bold"> Software Engineer.</span></p>
-            <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">I love making interesting stuff with 
-              <span className="text-yellow-500 text-bold"> Programming</span>🚀.</p>
+            <p className="text-lg sm:text-xl text-gray-400 break-words whitespace-normal">I love making interesting stuff and making impact with 
+              <span className="text-yellow-500 text-bold"> Programming </span>🚀.</p>
           </div>
           <div className="flex justify-center space-x-4 mt-6">
-            <Link href="https://github.com/Minty-cyber"target="_blank" className="text-gray-400 hover:text-white">
+            <Link href="https://github.com/EsselKobby/"target="_blank" className="text-gray-400 hover:text-white">
               <Github size={24} />
             </Link>
-            <Link href="https://www.linkedin.com/in/jeffrey-m-a846a2229" target="_blank" className="text-gray-400 hover:text-white">
+            <Link href="https://www.linkedin.com/in/bernard-essel" target="_blank" className="text-gray-400 hover:text-white">
               <Linkedin size={24} />
             </Link>
-            <Link href="mailto:jeffreymintah737@gmail.com"  target="_blank" className="text-gray-400 hover:text-white">
+            <Link href="mailto:essel.bernard.kobby@gmail.com"  target="_blank" className="text-gray-400 hover:text-white">
               <Mail size={24} />
             </Link>
           </div>
@@ -115,13 +115,10 @@ export default function Portfolio() {
           <div className="flex ">
             
             <p className="text-gray-300">
-            Hey there, I’m Jeffrey, a <span className="text-yellow-500 text-bold">Sofware Engineer</span> with a strong expertise in building scalable, 
-            efficient server-side applications. With a deep understanding of databases, APIs, and system architecture, 
-            I specialize in creating seamless, high-performance solutions that power user experiences. 
-            I&apos;m passionate about optimizing performance, ensuring security, and collaborating with cross-functional teams to deliver robust, reliable systems.
-            I have a diverse skill set that includes expertise in <span className="text-yellow-500 text-bold">Python</span> , <span  className="text-yellow-500 text-bold">Go </span>
-            and <span className="text-yellow-500 text-bold">JavaScript</span>. I am also intrigued by the concept of <span className="text-yellow-500 text-bold">AI</span> and 
-            I am currently exploring deeply on how it can be combined with my skillsets to make a lasting difference in the Tech World.
+            Hey there, I’m Bernard, a <span className="text-yellow-500 text-bold">Telecommunications Engineering</span> student passionate about networking, cybersecurity, and innovative tech solutions. I specialize in designing and troubleshooting network systems, with expertise in <span className="text-yellow-500 text-bold">MATLAB</span>, <span className="text-yellow-500 text-bold">Python</span>, and <span className="text-yellow-500 text-bold">web development</span>. 
+            I’m also deeply involved in advancing STEM education and exploring how <span className="text-yellow-500 text-bold">AI</span> can solve real-world challenges.
+            As a natural leader, I’ve led initiatives like <span className="text-yellow-500 text-bold">ENACTUS KNUST</span> and founded startups such as <span className="text-yellow-500 text-bold">FORESS Tech, Sneaks 'N' Wear & KalcHub</span>.
+            Let’s connect and build something extraordinary together!
             </p>
           </div>
         </section>
@@ -131,68 +128,49 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Techs and Tools...</span></h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <Skill name="Python" />
-            <Skill name="Go" />
             <Skill  name="JavaScript" />
-            <Skill name="TypeScript" />
             <Skill name="Django" />
-            <Skill name="Django Rest Framework" />
-            <Skill  name="FastAPI" />
-            <Skill name="Flask" />
-            <Skill name="Gin" />
-            <Skill name="NodeJS" />
-            <Skill name="AlpineJS" />
-            <Skill name="NextJS" />
-            <Skill  name="NGINX" />
-            <Skill name="Docker" />
-            <Skill name="Postman" />
-            <Skill name="RabbitMQ" />
-            <Skill name="SQLAlchemy" />
-            <Skill name="GraphQL" />
-            <Skill name="Celery" />
-            <Skill name="DBeaver" />
-          
-
-
+            <Skill name="Antenna Design" />
+            <Skill name="MATLAB" />
+            <Skill name="Graphic Design" />
+            <Skill name="Photography" />
+            <Skill name="Digital Marketing" />
           </div>
         </section>
 
         {/* Projects Section */}
 
-        <section>
+        {/* <section>
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Open Source Contributions...</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Project
-              title="FastAPI FullStack Template"
-              description="Refactored Imports in a file
-              and Ensured code effectiveness in a function and its declaration"
-              sourceLink="https://github.com/Minty-cyber/full-stack-fastapi-template"
+              title="TeamTek"
+              description="This is a repository that highlight a movie streaming website "
+              sourceLink="https://github.com/EsselKobby/TeamTek"
             />
             <Project
               title="Djate"
-              description="Engineered the usage of uv as the package manager, 
-                Reconfigured the MakeFile to implement uv as the package manager, 
-                Implemented the Github workflow to install uv, flake8 and black cli as a linter and formatter"
-              sourceLink="https://github.com/Minty-cyber/djate"
+              description="This is a repository that showcases my journey through my software engineering journey."
+              sourceLink="https://github.com/EsselKobby/Software-Engineering"
             />
            
           </div>
-        </section>
+        </section> */}
 
         <section>
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Projects...</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Project
-              title="LinkInk"
-              description="A full stack note taking application with advanced AI features"
-              sourceLink="https://github.com/Minty-cyber/linkink"
+              title="TeamTek"
+              description="This is a repository that highlight a movie streaming website"
+              sourceLink="https://github.com/EsselKobby/TeamTek"
             />
             <Project
-              title="BasicLingua Web 🤖"
-              description="A webapp that shows the demo of how the basiclingua library works with an LLM Python library. 
-              It has features of Text Summarization, Text Translate, Text Intent and so forth..."
-              sourceLink="https://github.com/Minty-cyber/BasicLingua-Webapp"
+              title="SE Repository 🤖"
+              description="This is a repository that showcases my journey through my software engineering journey."
+              sourceLink="https://github.com/EsselKobby/Software-Engineering"
             />
-            <Project
+            {/* <Project
               title="LinguaDoc 🤖"
               description="A desktop application for translating languages
                and giving users the functionality to export as a word document🚀"
@@ -202,13 +180,13 @@ export default function Portfolio() {
               title="PDF Assistant 🤖"
               description="An application that allows you to interact with your PDF's by answering questions based on the PDF's you upload ⚓."
               sourceLink="https://github.com/Minty-cyber/PDF-Assistant"
-            />
+            /> */}
           </div>
         </section>
 
       
 
-        <section>
+        {/* <section>
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Articles...</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Article
@@ -223,7 +201,7 @@ export default function Portfolio() {
             />
            
           </div>
-        </section>
+        </section> */}
 
           {/* Contact Section */}
           <section>
@@ -233,7 +211,7 @@ export default function Portfolio() {
           </p>
           <div className="text-center">
             <Link
-              href="mailto:jeffreymintah737@gmail.com"
+              href="mailto:essel.bernard.kobby@gmail.com"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
             >
               Get in Touch
