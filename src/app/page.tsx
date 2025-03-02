@@ -42,15 +42,7 @@ function Project({
   );
 }
 
-function Article({
-  title,
-  description,
-  sourceLink,
-}: {
-  title: string;
-  description: string;
-  sourceLink: string;
-}) 
+
 
 {
 
