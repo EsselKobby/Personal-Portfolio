@@ -39,32 +39,7 @@ function Project({
   );
 }
 
-function Article({
-  title,
-  description,
-  sourceLink,
-}: {
-  title: string;
-  description: string;
-  sourceLink: string;
-}) {
-  return (
-    <div className="bg-gray-800 p-6 rounded-lg">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-300 mb-4">{description}</p>
-      <div className="flex flex-wrap gap-4">
-        <Link
-          href={sourceLink}
-          className="text-blue-400 hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Read
-        </Link>
-      </div>
-    </div>
-  );
-}
+
 
 export default function Portfolio() {
   return (
