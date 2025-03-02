@@ -39,6 +39,32 @@ function Project({
   );
 }
 
+function Article({
+  title,
+  description,
+  sourceLink,
+}: {
+  title: string;
+  description: string;
+  sourceLink: string;
+}) {
+  return (
+    <div className="bg-gray-800 p-6 rounded-lg">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-300 mb-4">{description}</p>
+      <div className="flex flex-wrap gap-4">
+        <Link
+          href={sourceLink}
+          className="text-blue-400 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 export default function Portfolio() {
   return (
@@ -96,7 +122,7 @@ export default function Portfolio() {
               STEM education and exploring how <span className="text-yellow-500 font-bold">AI</span> can solve real-world
               challenges. As a natural leader, I’ve led initiatives like{" "}
               <span className="text-yellow-500 font-bold">ENACTUS KNUST</span> and founded startups such as{" "}
-              <span className="text-yellow-500 font-bold">FORESS Tech, Sneaks 'N' Wear & KalcHub</span>. Let’s connect and
+              <span className="text-yellow-500 font-bold">FORESS Tech, Sneaks &apos;N&apos; Wear & KalcHub</span>. Let’s connect and
               build something extraordinary together!
             </p>
           </div>
