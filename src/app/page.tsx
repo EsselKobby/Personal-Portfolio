@@ -138,25 +138,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Projects Section */}
-
-        {/* <section>
-          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Open Source Contributions...</span></h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Project
-              title="TeamTek"
-              description="This is a repository that highlight a movie streaming website "
-              sourceLink="https://github.com/EsselKobby/TeamTek"
-            />
-            <Project
-              title="Djate"
-              description="This is a repository that showcases my journey through my software engineering journey."
-              sourceLink="https://github.com/EsselKobby/Software-Engineering"
-            />
-           
-          </div>
-        </section> */}
-
         <section>
           <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Projects...</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -170,38 +151,12 @@ export default function Portfolio() {
               description="This is a repository that showcases my journey through my software engineering journey."
               sourceLink="https://github.com/EsselKobby/Software-Engineering"
             />
-            {/* <Project
-              title="LinguaDoc 🤖"
-              description="A desktop application for translating languages
-               and giving users the functionality to export as a word document🚀"
-              sourceLink="https://github.com/Minty-cyber/LinguaDoc"
-            />
-            <Project
-              title="PDF Assistant 🤖"
-              description="An application that allows you to interact with your PDF's by answering questions based on the PDF's you upload ⚓."
-              sourceLink="https://github.com/Minty-cyber/PDF-Assistant"
-            /> */}
           </div>
         </section>
 
       
 
-        {/* <section>
-          <h2 className="text-2xl font-semibold mb-4"><span className="text-yellow-500 text-3xl text-bold"> / Articles...</span></h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Article
-              title="React-Django CRUD"
-              description="An article on combining React and Django"
-              sourceLink="https://jeffmint.hashnode.dev/building-a-crud-application-with-react-and-django-a-todo-application"
-            />
-            <Article
-              title="Code that Speaks"
-              description="Talking and hearing back from your codes with Python"
-              sourceLink="https://jeffmint.hashnode.dev/code-that-speaks-a-beginners-guide-to-pyttsx3-text-to-speech-tts-in-python"
-            />
-           
-          </div>
-        </section> */}
+
 
           {/* Contact Section */}
           <section>
