@@ -1,4 +1,5 @@
 'use client';
+import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
